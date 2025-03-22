@@ -1,5 +1,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { useState } from "react";
+import { Link } from "react-router";
+
 
 interface FormData {
   name: string;
@@ -30,7 +32,7 @@ function SignUp() {
   }
 
   return (
-    <div className="w-full h-screen flex items-center justify-center">
+    <div className="w-full h-screen flex items-center flex-col gap-3.5 justify-center">
       <div className="border border-gray-200 w-fit rounded flex flex-col gap-2.5 items-center py-5 px-6">
         <h2 className="text-xl font-semibold text-gray-300 text-center mt-2">Welcome to Matiko!</h2>
         <h5 className="text-center text-gray-400 text-medium">Create an account</h5>
@@ -83,6 +85,9 @@ function SignUp() {
         >
           Log in with <FcGoogle size={20}/>
         </button>
+      </div>
+      <div className="flex flex-row gap-1">
+        <p>Already have an account? <Link to ="/login" className="cursor-pointer text-gray-700">Login</Link></p>
       </div>
     </div>
   );
