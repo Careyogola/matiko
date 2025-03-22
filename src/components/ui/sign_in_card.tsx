@@ -27,7 +27,7 @@ function SignIn(){
     <button 
           type="submit"
         //   onClick={submitForm}
-          className="p-2 bg-inherit lg:w-44 border border-gray-300 rounded hover:bg-gray-800 transition hover:text-gray-200 cursor-pointer"
+          className="p-2 lg:w-44 border border-gray-300 rounded bg-gray-800 transition text-gray-200 cursor-pointer"
           >Log in
       </button>
     </div>
