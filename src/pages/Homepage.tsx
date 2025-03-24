@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 import { IoPersonCircle } from "react-icons/io5";
-import { FaCalendar } from "react-icons/fa";
+import { FaCalendar, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaInstagram, FaLinkedin, FaTwitter, FaYoutube } from "react-icons/fa";
 import { MdLocationOn } from "react-icons/md";
 
 
@@ -138,6 +138,29 @@ function Homepage() {
 
             </div>
             </main>
+            <footer className="bg-gray-900 w-full text-gray-200">
+                <div className="m-5 grid grid-cols-4">
+                    <div className="flex flex-col gap-2">
+                        <h1>Matiko!</h1>
+                        <p>Matiko!, Sri Lanka's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Sri Lanka.
+                        </p>
+                        <div className="flex flex-row">
+                            <FaFacebook size={24}/>
+                            <FaInstagram size={24}/>
+                            <FaTwitter size={24}/>
+                            <FaLinkedin size={24}/>
+                            <FaYoutube size={24}/>
+                        </div>
+                        <div className="flex flex-row">
+                            <FaCcMastercard size={24}/>
+                            <FaCcVisa size={24}/>
+                            <FaCcPaypal size={24}/>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </footer>
         </div>
     )
 }
