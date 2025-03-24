@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 import { IoPersonCircle } from "react-icons/io5";
+import { FaCalendar } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 
 
 function Homepage() {
@@ -43,6 +45,25 @@ function Homepage() {
                     <button className="border border-blue-300 rounded-3xl py-2 px-4 text-blue-400 cursor-pointer">This month</button>
                     <button className="border border-gray-300 rounded-3xl py-2 px-4 hover:bg-blue-100 text-gray-950 cursor-pointer">Next month</button>
                 </div>
+            </div>
+
+            {/* tickets sections */}
+            <div className="flex flex-row overflow-x-auto mx-5 mt-5">
+                <div className="flex flex-col items-start p-3 border gap-2 border-gray-300 rounded w-fit shadow">
+                    <img src="./colombo.jpg" className="w-3xs rounded"/>
+                    <h2 className="text-2xl font-normal ">Colombo Fair</h2>
+                    <div className="flex flex-row items-center gap-2">
+                    <FaCalendar size={24}/>
+                    <p>20th May 2025</p>
+                    </div>
+                    <div className="flex flex-row items-center gap-2">
+                    <MdLocationOn size={24}/>
+                    <p>U.O.E Chepkoilel</p>
+                    </div>
+                    
+                    <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Buy Tickets</button>
+                </div>
+
             </div>
             
         </div>
