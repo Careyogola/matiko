@@ -4,8 +4,9 @@ import { IoPersonCircle } from "react-icons/io5";
 
 function Homepage() {
     return (
-        <div className="w-full h-screen flex flex-col gap-3.5">
-            <nav className="mx-5 py-4 flex flex-row items-center justify-between border-b">
+        <div className="w-full h-screen flex flex-col">
+            <div className="mx-5">
+            <nav className="py-4 flex flex-row items-center justify-between border-b">
             <div className="flex flex-row items-center gap-2.5">
                 <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
                     <Link to="" className="py-1 px-3  cursor-pointer">sports</Link>
@@ -22,17 +23,28 @@ function Homepage() {
                     <Link to="/login">Login</Link>
                     </div>
                 </div>
+                
             </nav>
+            </div>
             <div className="bg-blue-500">
-            <div className="flex flex-col mx-5 gap-3justify-start py-4">
-                <h2>Let's Book Your Tickets</h2>
-                <p>Discover your favorite entertainment right here</p>
+            <div className="flex flex-col gap-3 mx-5 justify-start py-4">
+                <h2 className="text-4xl font-medium text-gray-200 mt-5">Let's Book Your Tickets</h2>
+                <p className="text-gray-200 font-medium">Discover your favorite entertainment right here</p>
             
                 <input type="search" placeholder="Search for events" 
-                className="border border-gray-300 text-gray-600 rounded-4xl py-2 px-3 w-1/2  shadow h-14"
+                className="border border-gray-300 text-gray-600 bg-white rounded py-2 px-3 w-1/2  shadow h-14 mb-5"
                 />
             </div>
             </div>
+
+            <div className="flex flex-row mx-5 mt-5 justify-between">
+                <h2 className="text-4xl font-normal">What's happening <span className="text-blue-400 text-4xl font-normal">this month</span></h2>
+                <div className="flex flex-row gap-4">
+                    <button className="border border-blue-300 rounded-3xl py-2 px-4 text-blue-400 cursor-pointer">This month</button>
+                    <button className="border border-gray-300 rounded-3xl py-2 px-4 hover:bg-blue-100 text-gray-950 cursor-pointer">Next month</button>
+                </div>
+            </div>
+            
         </div>
     )
 }
