@@ -8,7 +8,7 @@ function Homepage() {
     return (
         <div className="w-full h-screen flex flex-col">
             <div className="mx-5">
-            <nav className="py-4 flex flex-row items-center justify-between border-b">
+            <nav className="py-4 flex flex-row items-center justify-between ">
             <div className="flex flex-row items-center gap-2.5">
                 <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
                     <Link to="" className="py-1 px-3  cursor-pointer">sports</Link>
@@ -28,7 +28,7 @@ function Homepage() {
                 
             </nav>
             </div>
-            <main className="mx-5 overflow-y-auto flex flex-col max-w-screen">
+            <main className="mx-5  flex flex-col  max-w-screen">
             <div className="bg-blue-500 rounded">
             <div className="flex flex-col gap-3 mx-5 justify-start py-4">
                 <h2 className="text-4xl font-medium text-gray-200 mt-5">Let's Book Your Tickets</h2>
@@ -138,13 +138,13 @@ function Homepage() {
 
             </div>
             </main>
-            <div className="bg-gray-900 w-full text-gray-200 overflow-y-auto mt-5">
+            <div className="bg-gray-900 w-full text-gray-200  mt-5">
                 <div className="m-5 grid grid-cols-4">
                     <div className="flex flex-col gap-2">
                         <h1>Matiko!</h1>
                         <p>Matiko!, Sri Lanka's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Sri Lanka.
                         </p>
-                        <div className="flex flex-row gap-1">
+                        <div className="flex flex-row gap-1 ">
                             <FaFacebook size={24}/>
                             <FaInstagram size={24}/>
                             <FaTwitter size={24}/>
@@ -179,6 +179,23 @@ function Homepage() {
                         <h3>Whatsapp(Text-only-service)</h3>
                         <h3>Support</h3>
                         
+                    </div>
+                </div>
+
+                <div className="flex flex-col p-5">
+                    <hr />
+                    <div className="flex flex-row justify-between mt-3">
+                        <div className="flex flex-row gap-2">
+                            
+                            <h4>Privacy Policy</h4>
+                            <h4>Terms & Conditions</h4>
+                            <h4>Cookie Policy</h4>
+                        </div>
+                        <div className="flex flex-row gap-2">
+                        <h4>Copyright {new Date().getFullYear()}</h4>
+                        <h4> © Matiko!</h4>
+                        <h4>All rights reserved</h4>
+                        </div>
                     </div>
                 </div>
 
