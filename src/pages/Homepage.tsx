@@ -138,29 +138,51 @@ function Homepage() {
 
             </div>
             </main>
-            <footer className="bg-gray-900 w-full text-gray-200">
+            <div className="bg-gray-900 w-full text-gray-200 overflow-y-auto mt-5">
                 <div className="m-5 grid grid-cols-4">
                     <div className="flex flex-col gap-2">
                         <h1>Matiko!</h1>
                         <p>Matiko!, Sri Lanka's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Sri Lanka.
                         </p>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row gap-1">
                             <FaFacebook size={24}/>
                             <FaInstagram size={24}/>
                             <FaTwitter size={24}/>
                             <FaLinkedin size={24}/>
                             <FaYoutube size={24}/>
                         </div>
-                        <div className="flex flex-row">
+                        <div className="flex flex-row gap-1">
                             <FaCcMastercard size={24}/>
                             <FaCcVisa size={24}/>
                             <FaCcPaypal size={24}/>
                         </div>
                     </div>
-                    
+
+                    <div className="flex flex-col gap-2">
+                        <h1>Useful Links</h1>
+                        <h3>Events</h3>
+                        <h3>MyTickets Deals</h3>
+                        <h3>My Account</h3>
+                        <h3>Refund Policy</h3>
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <h1>About Us</h1>
+                        <h3>Who we are?</h3>
+                        <h3>FAQ</h3>
+                        <h3>Contact us</h3>
+                        
+                    </div>
+
+                    <div className="flex flex-col gap-2">
+                        <h1>Contact</h1>
+                        <h3>Whatsapp(Text-only-service)</h3>
+                        <h3>Support</h3>
+                        
+                    </div>
                 </div>
 
-            </footer>
+            </div>
         </div>
     )
 }
