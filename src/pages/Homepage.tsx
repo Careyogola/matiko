@@ -20,7 +20,7 @@ function Homepage() {
                 </div>
                 <div className="flex flex-row items-center gap-2.5">
                     <Link to="/signup">Register</Link>
-                    <div className="flex flex-row items-center gap-2 border bg-blue-300 rounded px-4 py-1 cursor-pointer">
+                    <div className="flex flex-row items-center gap-2 border rounded-3xl px-4 py-1 cursor-pointer">
                     <IoPersonCircle />
                     <Link to="/login">Login</Link>
                     </div>
