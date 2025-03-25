@@ -142,7 +142,7 @@ function Homepage() {
                 <div className="m-5 grid grid-cols-4">
                     <div className="flex flex-col gap-2">
                         <h1 className="text-3xl font-medium underline">Matiko!</h1>
-                        <p>Matiko!, Sri Lanka's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Sri Lanka.
+                        <p>Matiko!, Kenya's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Kenya
                         </p>
                         <div className="flex flex-row gap-2 ">
                             <FaFacebook size={24}/>
