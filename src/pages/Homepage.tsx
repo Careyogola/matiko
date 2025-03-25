@@ -11,12 +11,12 @@ function Homepage() {
             <nav className="py-4 flex flex-row items-center justify-between ">
             <div className="flex flex-row items-center gap-2.5">
                 <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
-                    <Link to="" className="py-1 px-3  cursor-pointer">sports</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">concerts</Link>
-                    <Link to="" className="py-1 px-3 cursor-pointer">theatre</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">tech events</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">sell</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">my tickets</Link>
+                    <Link to="" className="py-1 px-3  cursor-pointer">Sports</Link>
+                    <Link to="" className="py-1 px-3  cursor-pointer">Concerts</Link>
+                    <Link to="" className="py-1 px-3 cursor-pointer">Theatre</Link>
+                    <Link to="" className="py-1 px-3  cursor-pointer">Tech Events</Link>
+                    <Link to="" className="py-1 px-3  cursor-pointer">Sell</Link>
+                    <Link to="" className="py-1 px-3  cursor-pointer">My tickets</Link>
                 </div>
                 <div className="flex flex-row items-center gap-2.5">
                     <Link to="/signup">Register</Link>
@@ -141,7 +141,7 @@ function Homepage() {
             <div className="bg-gray-900 w-full text-gray-300  mt-5">
                 <div className="m-5 grid grid-cols-4">
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-3xl font-medium underline">Matiko!</h1>
+                        <h1 className="text-3xl font-medium underline">Ma<span className="text-3xl text-yellow-400">ti</span>ko!</h1>
                         <p>Matiko!, Kenya's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Kenya
                         </p>
                         <div className="flex flex-row gap-2 ">
@@ -194,9 +194,10 @@ function Homepage() {
                     <div className="flex flex-row justify-between mt-3 text-gray-300">
                         <div className="flex flex-row gap-2">
                             
-                            <h4>Privacy Policy |</h4>
-                            <h4>Terms & Conditions |</h4>
-                            <h4>Cookie Policy</h4>
+                            <h4><Link to="/privacy-policy">Privacy Policy</Link> |</h4>
+                            <h4><Link to="/terms-and-conditions">Terms & Conditions</Link> |</h4>
+                            <h4><Link to="/cookie-policy">Cookie Policy</Link></h4>
+                            
                         </div>
                         <div className="flex flex-row gap-2">
                         <h4>Copyright {new Date().getFullYear()}</h4>
