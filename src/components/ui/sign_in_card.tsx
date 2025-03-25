@@ -62,7 +62,7 @@ function SignIn() {
           <button
             type="submit"
             
-            className="p-2 mt-4 lg:w-44 border border-gray-300 rounded bg-gray-800 transition text-gray-200 cursor-pointer"
+            className="p-2 mt-4 w-44border border-gray-300 rounded bg-gray-800 transition text-gray-200 cursor-pointer"
           >
             Log in
           </button>
