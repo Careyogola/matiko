@@ -32,7 +32,7 @@ function SignUp() {
   }
 
   return (
-    <div className="w-full h-screen flex items-center flex-col gap-3.5 justify-center">
+    <div className="w-full h-screen bg-[#101820] flex items-center flex-col gap-3.5 justify-center">
       <div className="border border-gray-200 w-fit rounded flex flex-col gap-2.5 items-center py-5 px-6">
         <h2 className="text-xl font-semibold text-gray-300 text-center mt-2">Welcome to Matiko!</h2>
         <h5 className="text-center text-gray-400 text-medium">Create an account</h5>
@@ -49,7 +49,7 @@ function SignUp() {
             className="p-2 border border-gray-300 w-96 rounded"
           />
 
-          <label htmlFor="email" className="text-gray-400 font-medium">Email</label>
+          <label htmlFor="email" className="text-[#FEE715] font-medium">Email</label>
           <input 
             type="email" 
             id="email"

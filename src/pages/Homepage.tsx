@@ -6,7 +6,7 @@ import { MdLocationOn } from "react-icons/md";
 
 function Homepage() {
     return (
-        <div className="w-full h-screen flex flex-col">
+        <div className="w-full bg-[#101820] text-[#FEE715] h-screen flex flex-col">
             <div className="mx-5">
             <nav className="py-4 flex flex-row items-center justify-between ">
             <div className="flex flex-row items-center gap-2.5">
