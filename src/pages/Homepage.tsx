@@ -147,7 +147,7 @@ function Homepage() {
                         <h1 className="text-2xl font-medium text-gray-300">Ma<span className="text-2xl text-yellow-400">ti</span>ko!</h1>
                         <p>Matiko!, Kenya's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Kenya
                         </p>
-                        <hr />
+                        
                         <div className="flex flex-row gap-2 ">
                             <FaFacebook size={24} className="text-blue-900"/>
                             <FaInstagram size={24} className="text-red-600"/>
