@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom"
 import { IoPersonCircle } from "react-icons/io5";
-import { FaCalendar, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaTwitter, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaCalendar, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaWhatsapp, FaYoutube } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
 import { MdLocationOn } from "react-icons/md";
 
 
@@ -146,17 +147,18 @@ function Homepage() {
                         <h1 className="text-2xl font-medium text-gray-300">Ma<span className="text-2xl text-yellow-400">ti</span>ko!</h1>
                         <p>Matiko!, Kenya's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Kenya
                         </p>
+                        <hr />
                         <div className="flex flex-row gap-2 ">
-                            <FaFacebook size={24}/>
-                            <FaInstagram size={24}/>
-                            <FaTwitter size={24}/>
-                            <FaLinkedin size={24}/>
-                            <FaYoutube size={24}/>
+                            <FaFacebook size={24} className="text-blue-900"/>
+                            <FaInstagram size={24} className="text-red-600"/>
+                            <FaXTwitter size={24} className="text-black"/>
+                            <FaLinkedin size={24} className="text-blue-500"/>
+                            <FaYoutube size={24} className="text-red-500"/>
                         </div>
                         <div className="flex flex-row gap-2">
-                            <FaCcMastercard size={24}/>
-                            <FaCcVisa size={24}/>
-                            <FaCcPaypal size={24}/>
+                            <FaCcMastercard size={24} className="text-yellow-400"/>
+                            <FaCcVisa size={24} className="text-white"/>
+                            <FaCcPaypal size={24} className="text-blue-400"/> 
                         </div>
                     </div>
 
@@ -179,12 +181,12 @@ function Homepage() {
                     <div className="flex flex-col gap-2">
                         <h1 className="text-2xl font-medium text-gray-300">Contact</h1>
                         <div className="flex flex-row gap-2">
-                            <FaWhatsapp size={24}/>
-                            <h3>Whatsapp(Text-only-service)</h3>
+                            <FaWhatsapp size={24} color="green"/>
+                            <a href="#">Whatsapp(Text-only-service)</a>
                         </div>
                         <div className="flex flex-row gap-2">
-                            <FaMailBulk size={24}/>
-                            <h3>Support</h3>
+                            <FaMailBulk size={24} color="blue"/>
+                            <a href="#">Support</a>
                         </div>
                         
                         
