@@ -2,11 +2,12 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './index.css';
-import App from './App.tsx';
+
 import SignIn from './components/ui/sign_in_card.tsx';
-import Homepage from './pages/Homepage.tsx';
 import  AuthProvider from 'react-auth-kit';
 import createStore from 'react-auth-kit/createStore';
+import SignUp from './components/ui/sign_up_card.tsx';
+import App from './App.tsx';
 
 const store = createStore({
   authName:'_auth',
@@ -20,9 +21,10 @@ createRoot(document.getElementById('root')!).render(
   <BrowserRouter>
     <StrictMode>
       <Routes>
-        <Route path="/" element={<App />} />
+        <Route path="/" element={<App/>} />
         <Route path="/login" element={<SignIn />} />
-        <Route path='/dashboard' element={<Homepage />} />
+        <Route path='/signup' element={<SignUp/>} />
+        
       </Routes>
     </StrictMode>
   </BrowserRouter>

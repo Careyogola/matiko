@@ -1,12 +1,13 @@
 import { Fragment } from "react/jsx-runtime"
-import SignUp from "./components/ui/sign_up_card"
+
+import Homepage from "./pages/Homepage"
 
 
 function App() {
   
   return (
     <Fragment>
-      <SignUp />
+      <Homepage />
     </Fragment>
   )
 }
