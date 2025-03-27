@@ -6,11 +6,11 @@ import { MdLocationOn } from "react-icons/md";
 
 function Homepage() {
     return (
-        <div className="w-full bg-[#101820] text-[#FEE715] h-screen flex flex-col">
+        <div className="w-full h-screen flex flex-col">
             <div className="mx-5">
             <nav className="py-4 flex flex-row items-center justify-between ">
             <div className="flex flex-row items-center gap-2.5">
-                <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
+                <h2 className="text-4xl font-medium">Ma<span className="text-4x">ti</span>ko!</h2>
                     <Link to="" className="py-1 px-3  cursor-pointer">Sports</Link>
                     <Link to="" className="py-1 px-3  cursor-pointer">Concerts</Link>
                     <Link to="" className="py-1 px-3 cursor-pointer">Theatre</Link>
@@ -29,7 +29,7 @@ function Homepage() {
             </nav>
             </div>
             <main className="mx-5  flex flex-col  max-w-screen">
-            <div className="bg-blue-500 rounded">
+            <div className="bg-black rounded">
             <div className="flex flex-col gap-3 mx-5 justify-start py-4">
                 <h2 className="text-4xl font-medium text-gray-200 mt-5">Let's Book Your Tickets</h2>
                 <p className="text-gray-200 font-medium">Discover your favorite entertainment right here</p>
