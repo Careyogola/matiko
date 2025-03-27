@@ -83,7 +83,7 @@ function SignUp() {
           onClick={Auth} 
           className="flex flex-row items-center justify-center gap-1.5 py-2 px-3 border border-gray-300 w-full rounded cursor-pointer bg-gray-800 transition text-gray-200"
         >
-          Log in with <FcGoogle size={20}/>
+        <FcGoogle size={20}/> Login with google
         </button>
       </div>
       <div className="flex flex-row gap-1">

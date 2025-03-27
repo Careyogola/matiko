@@ -10,7 +10,7 @@ function Homepage() {
             <div className="mx-5">
             <nav className="py-4 flex flex-row items-center justify-between ">
             <div className="flex flex-row items-center gap-2.5">
-                <h2 className="text-4xl font-medium">Ma<span className="text-4x">ti</span>ko!</h2>
+                <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
                     <Link to="" className="py-1 px-3  cursor-pointer">Sports</Link>
                     <Link to="" className="py-1 px-3  cursor-pointer">Concerts</Link>
                     <Link to="" className="py-1 px-3 cursor-pointer">Theatre</Link>
@@ -29,7 +29,8 @@ function Homepage() {
             </nav>
             </div>
             <main className="mx-5  flex flex-col  max-w-screen">
-            <div className="bg-black rounded">
+
+            <div className="bg-black rounded flex flex-row justify-between">
             <div className="flex flex-col gap-3 mx-5 justify-start py-4">
                 <h2 className="text-4xl font-medium text-gray-200 mt-5">Let's Book Your Tickets</h2>
                 <p className="text-gray-200 font-medium">Discover your favorite entertainment right here</p>
@@ -38,6 +39,7 @@ function Homepage() {
                 className="border border-gray-300 text-gray-600 bg-white rounded py-2 px-3 w-1/2  shadow h-14 mb-5"
                 />
             </div>
+            <img src="/m.webp" className="h-64 p-4"/>
             </div>
 
             <div className="flex flex-row mt-5 justify-between">
@@ -138,10 +140,10 @@ function Homepage() {
 
             </div>
             </main>
-            <div className="bg-gray-900 w-full text-gray-300  mt-5">
+            <div className="bg-gray-600 w-full text-gray-300  mt-5">
                 <div className="m-5 grid grid-cols-4">
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-3xl font-medium underline">Ma<span className="text-3xl text-yellow-400">ti</span>ko!</h1>
+                        <h1 className="text-2xl font-medium text-gray-300">Ma<span className="text-2xl text-yellow-400">ti</span>ko!</h1>
                         <p>Matiko!, Kenya's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Kenya
                         </p>
                         <div className="flex flex-row gap-2 ">
@@ -159,23 +161,23 @@ function Homepage() {
                     </div>
 
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-3xl font-medium text-gray-300 underline">Useful Links</h1>
-                        <h3>Events</h3>
-                        <h3>MyTickets Deals</h3>
-                        <h3>My Account</h3>
-                        <h3>Refund Policy</h3>
+                        <h1 className="text-2xl font-medium text-gray-300">Useful Links</h1>
+                        <a href="#" className="">Events</a>
+                        <a href="#">MyTickets Deals</a>
+                        <a href="#">My Account</a>
+                        <a href="#">Refund Policy</a>
                     </div>
 
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-3xl font-medium text-gray-300 underline">About Us</h1>
-                        <h3>Who we are?</h3>
-                        <h3>FAQ</h3>
-                        <h3>Contact us</h3>
+                        <h1 className="text-2xl font-medium text-gray-300">About Us</h1>
+                        <a href="#">Who we are?</a>
+                        <a href="#">FAQ</a>
+                        <a href="#">Contact us</a>
                         
                     </div>
 
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-3xl font-medium text-gray-300 underline">Contact</h1>
+                        <h1 className="text-2xl font-medium text-gray-300">Contact</h1>
                         <div className="flex flex-row gap-2">
                             <FaWhatsapp size={24}/>
                             <h3>Whatsapp(Text-only-service)</h3>
