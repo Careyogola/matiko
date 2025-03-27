@@ -205,7 +205,7 @@ function Homepage() {
                         </div>
                         <div className="flex flex-row gap-2">
                         <h4>Copyright {new Date().getFullYear()}</h4>
-                        <h4> © Matiko!</h4>
+                        <h4> © Ma<span className="text-yellow-400">ti</span>ko!</h4>
                         <h4>All rights reserved</h4>
                         </div>
                     </div>
