@@ -11,16 +11,16 @@ function Homepage() {
             <nav className="py-4 flex flex-row items-center justify-between ">
             <div className="flex flex-row items-center gap-2.5">
                 <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
-                    <Link to="" className="py-1 px-3  cursor-pointer">Sports</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">Concerts</Link>
-                    <Link to="" className="py-1 px-3 cursor-pointer">Theatre</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">Tech Events</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">Sell</Link>
-                    <Link to="" className="py-1 px-3  cursor-pointer">My tickets</Link>
+                    <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Sports</Link>
+                    <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Concerts</Link>
+                    <Link to="" className="py-1 px-3 hover:text-blue-300 cursor-pointer">Theatre</Link>
+                    <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Tech Events</Link>
+                    <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Sell</Link>
+                    <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">My tickets</Link>
                 </div>
                 <div className="flex flex-row items-center gap-2.5">
-                    <Link to="/signup">Register</Link>
-                    <div className="flex flex-row items-center gap-2 border rounded-3xl px-4 py-1 cursor-pointer">
+                    <Link to="/signup" className="hover:text-blue-600">Register</Link>
+                    <div className="flex flex-row items-center gap-2 border rounded-3xl px-4 py-1 hover:text-yellow-300 transition hover:bg-black cursor-pointer">
                     <IoPersonCircle />
                     <Link to="/login">Login</Link>
                     </div>
@@ -30,7 +30,7 @@ function Homepage() {
             </div>
             <main className="mx-5  flex flex-col  max-w-screen">
 
-            <div className="bg-black rounded flex flex-row justify-between">
+            <div className="bg-black rounded">
             <div className="flex flex-col gap-3 mx-5 justify-start py-4">
                 <h2 className="text-4xl font-medium text-gray-200 mt-5">Let's Book Your Tickets</h2>
                 <p className="text-gray-200 font-medium">Discover your favorite entertainment right here</p>
@@ -39,7 +39,7 @@ function Homepage() {
                 className="border border-gray-300 text-gray-600 bg-white rounded py-2 px-3 w-1/2  shadow h-14 mb-5"
                 />
             </div>
-            <img src="/m.webp" className="h-64 p-4"/>
+            
             </div>
 
             <div className="flex flex-row mt-5 justify-between">
@@ -61,63 +61,63 @@ function Homepage() {
                     </div>
                     <div className="flex flex-row items-center gap-2">
                     <MdLocationOn size={24}/>
-                    <p>U.O.E Chepkoilel</p>
+                    <p>Quiver Kilimali</p>
                     </div>
                     
                     <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Buy Tickets</button>
                 </div>
                 <div className="flex flex-col items-start p-3 border gap-2 border-gray-300 rounded w-fit shadow">
-                    <img src="./colombo.jpg" className="w-3xs rounded"/>
-                    <h2 className="text-2xl font-normal ">Colombo Fair</h2>
+                    <img src="./holi.jpg" className="w-3xs rounded"/>
+                    <h2 className="text-2xl font-normal ">Holi Festival</h2>
                     <div className="flex flex-row items-center gap-2">
                     <FaCalendar size={24}/>
                     <p>20th May 2025</p>
                     </div>
                     <div className="flex flex-row items-center gap-2">
                     <MdLocationOn size={24}/>
-                    <p>U.O.E Chepkoilel</p>
+                    <p>Kitengela</p>
                     </div>
                     
                     <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Buy Tickets</button>
                 </div>
                 <div className="flex flex-col items-start p-3 border gap-2 border-gray-300 rounded w-fit shadow">
-                    <img src="./colombo.jpg" className="w-3xs rounded"/>
-                    <h2 className="text-2xl font-normal ">Colombo Fair</h2>
+                    <img src="./wayo.jpg" className="w-3xs rounded"/>
+                    <h2 className="text-2xl font-normal ">Color Festival</h2>
                     <div className="flex flex-row items-center gap-2">
                     <FaCalendar size={24}/>
                     <p>20th May 2025</p>
                     </div>
                     <div className="flex flex-row items-center gap-2">
                     <MdLocationOn size={24}/>
-                    <p>U.O.E Chepkoilel</p>
+                    <p>Musium Hill Road</p>
                     </div>
                     
                     <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Buy Tickets</button>
                 </div>
                 <div className="flex flex-col items-start p-3 border gap-2 border-gray-300 rounded w-fit shadow">
-                    <img src="./colombo.jpg" className="w-3xs rounded"/>
-                    <h2 className="text-2xl font-normal ">Colombo Fair</h2>
+                    <img src="./manuel.jpeg" className="w-3xs rounded"/>
+                    <h2 className="text-2xl font-normal ">Lakshapana Festival</h2>
                     <div className="flex flex-row items-center gap-2">
                     <FaCalendar size={24}/>
                     <p>20th May 2025</p>
                     </div>
                     <div className="flex flex-row items-center gap-2">
                     <MdLocationOn size={24}/>
-                    <p>U.O.E Chepkoilel</p>
+                    <p>Sarit City</p>
                     </div>
                     
                     <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Buy Tickets</button>
                 </div>
                 <div className="flex flex-col items-start p-3 border gap-2 border-gray-300 rounded w-fit shadow">
                     <img src="./colombo.jpg" className="w-3xs rounded"/>
-                    <h2 className="text-2xl font-normal ">Colombo Fair</h2>
+                    <h2 className="text-2xl font-normal ">Mashemeji derby</h2>
                     <div className="flex flex-row items-center gap-2">
                     <FaCalendar size={24}/>
-                    <p>20th May 2025</p>
+                    <p>25th May 2025</p>
                     </div>
                     <div className="flex flex-row items-center gap-2">
                     <MdLocationOn size={24}/>
-                    <p>U.O.E Chepkoilel</p>
+                    <p>Nyayo Stadium</p>
                     </div>
                     
                     <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Buy Tickets</button>
