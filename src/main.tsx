@@ -9,6 +9,7 @@ import createStore from 'react-auth-kit/createStore';
 import SignUp from './components/ui/sign_up_card.tsx';
 import App from './App.tsx';
 
+
 const store = createStore({
   authName:'_auth',
   authType:'cookie',
