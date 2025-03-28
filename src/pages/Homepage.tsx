@@ -3,7 +3,7 @@ import { IoPersonCircle } from "react-icons/io5";
 import { FaCalendar, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdLocationOn } from "react-icons/md";
-import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import { Menu, MenuButton, MenuItem, MenuItems,Popover, PopoverButton, PopoverPanel  } from '@headlessui/react'
 import {
   ArchiveBoxXMarkIcon,
   ChevronDownIcon,
@@ -21,6 +21,40 @@ function Homepage() {
             <div className="flex flex-row items-center gap-2.5">
                 <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Sports</Link>
+
+                    <Popover className="bg-gray-500">
+          <PopoverButton className="block text-sm/6 font-semibold text-white/50 focus:outline-none data-[active]:text-gray-500 data-[hover]:text-white data-[focus]:outline-1 data-[focus]:outline-white">
+            Solutions
+          </PopoverButton>
+          <PopoverPanel
+            transition
+            anchor="bottom"
+            className="divide-y divide-white/5 rounded-xl bg-white/5 text-sm/6 transition duration-200 ease-in-out [--anchor-gap:var(--spacing-5)] data-[closed]:-translate-y-1 data-[closed]:opacity-0"
+          >
+            <div className="p-3">
+              <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
+                <p className="font-semibold text-white">Insights</p>
+                <p className="text-white/50">Measure actions your users take</p>
+              </a>
+              <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
+                <p className="font-semibold text-white">Automations</p>
+                <p className="text-white/50">Create your own targeted content</p>
+              </a>
+              <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
+                <p className="font-semibold text-white">Reports</p>
+                <p className="text-white/50">Keep track of your growth</p>
+              </a>
+            </div>
+            <div className="p-3">
+              <a className="block rounded-lg py-2 px-3 transition hover:bg-white/5" href="#">
+                <p className="font-semibold text-white">Documentation</p>
+                <p className="text-white/50">Start integrating products and tools</p>
+              </a>
+            </div>
+          </PopoverPanel>
+        </Popover>
+
+
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Concerts</Link>
                     <Link to="" className="py-1 px-3 hover:text-blue-300 cursor-pointer">Theatre</Link>
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Tech Events</Link>
