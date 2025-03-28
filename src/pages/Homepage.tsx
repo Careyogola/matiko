@@ -131,7 +131,7 @@ function Homepage() {
                 <div className="m-10 flex flex-row items-center justify-between">
                     <div className="flex flex-col items-start gap-2">
                 <h2 className="text-4xl text-gray-100 font-normal">Transfer & Resend Tickets</h2>
-                <p className="text-gray-300">Get registered with MyTickets to transfer and receive E-Ticket(s).<br/> Spread the joy by seamlessly transferring tickets to friends and family.</p>
+                <p className="text-gray-300">Get registered with Matiko! to transfer and receive E-Ticket(s).<br/> Spread the joy by seamlessly transferring tickets to friends and family.</p>
                 <div className="flex flex-row gap-3">
                     <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Resend e-Ticket</button>
                     <button className="bg-blue-400 rounded py-2 px-4 text-white cursor-pointer">Transfer Ticket</button>
