@@ -3,6 +3,14 @@ import { IoPersonCircle } from "react-icons/io5";
 import { FaCalendar, FaCcMastercard, FaCcPaypal, FaCcVisa, FaFacebook, FaInstagram, FaLinkedin, FaMailBulk, FaWhatsapp, FaYoutube } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { MdLocationOn } from "react-icons/md";
+import { Menu, MenuButton, MenuItem, MenuItems } from '@headlessui/react'
+import {
+  ArchiveBoxXMarkIcon,
+  ChevronDownIcon,
+  PencilIcon,
+  Square2StackIcon,
+  TrashIcon,
+} from '@heroicons/react/16/solid'
 
 
 function Homepage() {
@@ -18,6 +26,50 @@ function Homepage() {
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Tech Events</Link>
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Sell</Link>
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">My tickets</Link>
+
+                    <Menu>
+        <MenuButton className="inline-flex items-center gap-2 rounded-md bg-gray-400 py-1.5 px-3 text-sm/6 font-semibold text-white shadow-inner shadow-white/10 focus:outline-none data-[hover]:bg-gray-700 data-[open]:bg-gray-700 data-[focus]:outline-1 data-[focus]:outline-white">
+          Options
+          <ChevronDownIcon className="size-4 fill-white/60" />
+        </MenuButton>
+
+        <MenuItems
+          transition
+          anchor="bottom end"
+          className="w-52 origin-top-right rounded-xl border border-white/5 bg-white/5 p-1 text-sm/6 text-white transition duration-100 ease-out [--anchor-gap:var(--spacing-1)] focus:outline-none data-[closed]:scale-95 data-[closed]:opacity-0"
+        >
+          <MenuItem>
+            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
+              <PencilIcon className="size-4 fill-white/30" />
+              Edit
+              <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘E</kbd>
+            </button>
+          </MenuItem>
+          <MenuItem>
+            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
+              <Square2StackIcon className="size-4 fill-white/30" />
+              Duplicate
+              <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
+            </button>
+          </MenuItem>
+          <div className="my-1 h-px bg-white/5" />
+          <MenuItem>
+            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
+              <ArchiveBoxXMarkIcon className="size-4 fill-white/30" />
+              Archive
+              <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘A</kbd>
+            </button>
+          </MenuItem>
+          <MenuItem>
+            <button className="group flex w-full items-center gap-2 rounded-lg py-1.5 px-3 data-[focus]:bg-white/10">
+              <TrashIcon className="size-4 fill-white/30" />
+              Delete
+              <kbd className="ml-auto hidden font-sans text-xs text-white/50 group-data-[focus]:inline">⌘D</kbd>
+            </button>
+          </MenuItem>
+        </MenuItems>
+      </Menu>
+
                 </div>
                 <div className="flex flex-row items-center gap-2.5">
                     <Link to="/signup" className="hover:text-blue-600">Register</Link>
