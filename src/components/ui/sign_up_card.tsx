@@ -20,11 +20,11 @@ function SignUp() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   }
 
-  function register(e: React.FormEvent<HTMLFormElement>) {
-    e.preventDefault();
-    console.log("Registering with:", formData);
+  // function register(e: React.FormEvent<HTMLFormElement>) {
+  //   e.preventDefault();
+  //   console.log("Registering with:", formData);
    
-  }
+  // }
 
   function Auth() {
     console.log("Google Authentication");
@@ -37,7 +37,7 @@ function SignUp() {
         <h2 className="text-xl font-semibold text-gray-300 text-center mt-2">Welcome to Matiko!</h2>
         <h5 className="text-center text-gray-400 text-medium">Create an account</h5>
 
-        <form onSubmit={register} method="POST" className="flex flex-col gap-y-2.5 p-4">
+        <form action="/register" method="POST" className="flex flex-col gap-y-2.5 p-4">
           <label htmlFor="name" className="text-gray-400 font-medium">Name</label>
           <input 
             type="text" 
