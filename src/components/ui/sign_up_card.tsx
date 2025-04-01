@@ -20,11 +20,33 @@ function SignUp() {
     setFormData({ ...formData, [e.target.id]: e.target.value });
   }
 
-  // function register(e: React.FormEvent<HTMLFormElement>) {
-  //   e.preventDefault();
-  //   console.log("Registering with:", formData);
-   
-  // }
+  async function register(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+  
+    try {
+      const response = await fetch("http://localhost:3002/users", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+  
+      if (!response.ok) {
+        throw new Error("Failed to register");
+      }
+  
+      const data = await response.json();
+      console.log("User registered successfully:", data);
+  
+      // Redirect or show success message
+      alert("Registration successful!");
+    } catch (error) {
+      console.error("Registration error:", error);
+      alert("Failed to register. Please try again.");
+    }
+  }
+  
 
   function Auth() {
     console.log("Google Authentication");
@@ -37,7 +59,7 @@ function SignUp() {
         <h2 className="text-xl font-semibold text-gray-300 text-center mt-2">Welcome to Matiko!</h2>
         <h5 className="text-center text-gray-400 text-medium">Create an account</h5>
 
-        <form action="/register" method="POST" className="flex flex-col gap-y-2.5 p-4">
+        <form onSubmit={register} method="POST" className="flex flex-col gap-y-2.5 p-4">
           <label htmlFor="name" className="text-gray-400 font-medium">Name</label>
           <input 
             type="text" 
