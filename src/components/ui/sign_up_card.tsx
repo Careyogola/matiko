@@ -23,12 +23,12 @@ function SignUp() {
   function register(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
     console.log("Registering with:", formData);
-    // Implement authentication logic
+   
   }
 
   function Auth() {
     console.log("Google Authentication");
-    // Implement Google authentication logic
+    
   }
 
   return (
@@ -37,7 +37,7 @@ function SignUp() {
         <h2 className="text-xl font-semibold text-gray-300 text-center mt-2">Welcome to Matiko!</h2>
         <h5 className="text-center text-gray-400 text-medium">Create an account</h5>
 
-        <form onSubmit={register} className="flex flex-col gap-y-2.5 p-4">
+        <form onSubmit={register} method="POST" className="flex flex-col gap-y-2.5 p-4">
           <label htmlFor="name" className="text-gray-400 font-medium">Name</label>
           <input 
             type="text" 
@@ -45,7 +45,7 @@ function SignUp() {
             value={formData.name}
             onChange={handleChange}
             required
-            placeholder="Carey Ogola"
+            placeholder="John Doe"
             className="p-2 border border-gray-300 w-96 rounded"
           />
 
@@ -56,7 +56,7 @@ function SignUp() {
             value={formData.email}
             onChange={handleChange}
             required
-            placeholder="eg.abc@gmail.com"
+            placeholder="johndoe@gmail.com"
             className="p-2 border border-gray-300 w-96 rounded"
           />
 
@@ -81,7 +81,7 @@ function SignUp() {
 
         <button 
           onClick={Auth} 
-          className="flex flex-row items-center justify-center gap-1.5 py-2 px-3 border border-gray-300 w-full rounded cursor-pointer bg-gray-800 transition text-gray-200"
+          className="flex flex-row items-center justify-center gap-1.5 py-2 px-3 border border-gray-300 w-96 rounded cursor-pointer bg-gray-800 transition text-gray-200"
         >
         <FcGoogle size={20}/> Login with google
         </button>
