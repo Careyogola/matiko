@@ -250,7 +250,7 @@ function Homepage() {
 
                     <div className="flex flex-col gap-2">
                         <h1 className="text-2xl font-medium text-gray-300">Useful Links</h1>
-                        <a href="#" className="">Events</a>
+                        <a href="#">Events</a>
                         <a href="#">MyTickets Deals</a>
                         <a href="#">My Account</a>
                         <a href="#">Refund Policy</a>
@@ -290,8 +290,8 @@ function Homepage() {
                             
                         </div>
                         <div className="flex flex-row gap-2">
-                        <h4>Copyright {new Date().getFullYear()}</h4>
-                        <h4> © Ma<span className="text-yellow-400">ti</span>ko!</h4>
+                        <h4>&copy; Ma<span className="text-yellow-400">ti</span>ko!</h4>
+                        <h4>{new Date().getFullYear()}</h4>
                         <h4>All rights reserved</h4>
                         </div>
                     </div>
