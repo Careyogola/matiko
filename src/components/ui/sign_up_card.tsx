@@ -1,6 +1,21 @@
 import { FcGoogle } from "react-icons/fc";
-import { useState } from "react";
 import { Link } from "react-router";
+import { useState } from "react";
+
+
+
+// function SignIn() {
+//   const [backendData, setBackendData] = useState([{}]);
+
+// useEffect(()=>{
+//   fetch("/api").then(response => response.json()).
+//   then(data => {
+//       setBackendData(data)
+//     }
+//   )
+// }, [])
+
+// }
 
 
 interface FormData {
@@ -24,7 +39,7 @@ function SignUp() {
     e.preventDefault();
   
     try {
-      const response = await fetch("http://localhost:3002/users", {
+      const response = await fetch("/api", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

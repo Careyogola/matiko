@@ -22,7 +22,7 @@ function Homepage() {
                 <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Sports</Link>
 
-                    <Popover className="bg-gray-500">
+                    <Popover className="">
           <PopoverButton className="block text-sm/6 font-semibold text-white/50 focus:outline-none data-[active]:text-gray-500 data-[hover]:text-white data-[focus]:outline-1 data-[focus]:outline-white">
             Solutions
           </PopoverButton>
