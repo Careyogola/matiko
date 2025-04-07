@@ -108,6 +108,13 @@ function SignUp() {
             className="p-2 border border-gray-300 w-96 rounded"
           />
 
+           {/* terms and conditions and checkbox  */}
+
+        <div className="flex flex-row items-center gap-10">
+          <input type="checkbox"/>
+          <p>Accept <span className="text-blue-400">terms and conditions</span> to proceed</p>
+        </div>
+
           <button 
             type="submit"
             className="p-2 w-full border border-gray-300 rounded bg-gray-800 transition text-gray-200 cursor-pointer mt-2"
@@ -115,6 +122,8 @@ function SignUp() {
             Sign Up
           </button>
         </form>
+
+       
 
         <button 
           onClick={Auth} 
