@@ -231,20 +231,20 @@ function Homepage() {
                 <div className="m-5 grid grid-cols-4">
                     <div className="flex flex-col gap-2">
                         <h1 className="text-2xl font-medium text-gray-300">Ma<span className="text-2xl text-yellow-400">ti</span>ko!</h1>
-                        <p>Matiko!, Kenya's premier and most trusted online ticket partner, serves as the official marketplace providing a secure and safe platform for purchasing tickets to all entertainment events in Kenya
-                        </p>
-                        
                         <div className="flex flex-row gap-2 ">
-                            <FaFacebook size={24} className="text-blue-900"/>
-                            <FaInstagram size={24} className="text-red-600"/>
-                            <FaXTwitter size={24} className="text-black"/>
-                            <FaLinkedin size={24} className="text-blue-500"/>
-                            <FaYoutube size={24} className="text-red-500"/>
+                            <FaFacebook size={24} className="hover:cursor-pointer hover:text-blue-600"/>
+                            <FaInstagram size={24} className="hover:cursor-pointer hover:text-red-800"/>
+                            <FaXTwitter size={24} className="hover:cursor-pointer hover:text-black"/>
+                            <FaLinkedin size={24} className="hover:cursor-pointer hover:text-blue-600"/>
+                            <FaYoutube size={24} className="hover:cursor-pointer hover:text-red-600"/>
                         </div>
+                        <div className="flex flex-col">
+                          <p>Methods of payments</p>
                         <div className="flex flex-row gap-2">
                             <FaCcMastercard size={24} className="text-yellow-400"/>
                             <FaCcVisa size={24} className="text-white"/>
                             <FaCcPaypal size={24} className="text-blue-400"/> 
+                        </div>
                         </div>
                     </div>
 
