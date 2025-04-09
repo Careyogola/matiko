@@ -103,6 +103,7 @@ function SignUp() {
             id="password"
             value={formData.password}
             onChange={handleChange}
+            required
             placeholder="********"
             maxLength={12}
             className="p-2 border border-gray-300 w-96 rounded"
