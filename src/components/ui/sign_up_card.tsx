@@ -1,6 +1,7 @@
 import { FcGoogle } from "react-icons/fc";
 import { Link } from "react-router";
 import { useState } from "react";
+// import axios from 'axios'
 
 
 
@@ -37,29 +38,6 @@ function SignUp() {
 
   async function register(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-  
-    try {
-      const response = await fetch("/api", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify(formData),
-      });
-  
-      if (!response.ok) {
-        throw new Error("Failed to register");
-      }
-  
-      const data = await response.json();
-      console.log("User registered successfully:", data);
-  
-      // Redirect or show success message
-      alert("Registration successful!");
-    } catch (error) {
-      console.error("Registration error:", error);
-      alert("Failed to register. Please try again.");
-    }
   }
   
 
