@@ -38,6 +38,7 @@ function SignUp() {
 
   async function register(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+    console.log('FormData:',formData);
   }
   
 
