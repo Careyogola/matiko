@@ -2,6 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import { FcGoogle } from "react-icons/fc";
 import { Link, useNavigate } from "react-router";
+// import Loader from "../Loader.tsx";
 
 interface FormData {
   name: string;
@@ -16,6 +17,8 @@ function SignUp() {
     password: "",
   });
 
+  const [loading, setLoading] = useState(false);
+
   const navigate = useNavigate();
 
   function handleChange(e: React.ChangeEvent<HTMLInputElement>) {
@@ -24,7 +27,7 @@ function SignUp() {
 
   async function register(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-
+    setLoading(true);
     try {
       const response = await axios.post("http://localhost:4000/api/auth/signup", formData);
       console.log("Signup success:", response.data);
@@ -38,6 +41,8 @@ function SignUp() {
         console.error("Unexpected error:", error);
         alert("Something went wrong");
       }
+    } finally {
+      setLoading(false);
     }
   }
 
@@ -111,9 +116,10 @@ function SignUp() {
 
           <button
             type="submit"
+            disabled={loading}
             className="p-2 w-full border border-gray-300 rounded bg-gray-800 transition text-gray-200 cursor-pointer mt-2"
           >
-            Sign Up
+            {loading ? 'loading...' : 'sign up'}
           </button>
         </form>
 

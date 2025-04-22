@@ -290,7 +290,7 @@ function Homepage() {
                             
                         </div>
                         <div className="flex flex-row gap-2">
-                        <h4>&copy; Ma<span className="text-yellow-400">ti</span>ko!</h4>
+                        <h4>&copy; Gear<span className="text-yellow-400">ti</span>ckets</h4>
                         <h4>{new Date().getFullYear()}</h4>
                         <h4>All rights reserved</h4>
                         </div>
