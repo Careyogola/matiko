@@ -50,7 +50,7 @@ function SignUp() {
   return (
     <div className="w-full h-screen  flex items-center flex-col gap-3.5 justify-center">
       <div className="border border-gray-200 w-fit rounded flex flex-col gap-2.5 items-center py-5 px-6">
-        <h2 className="text-xl font-semibold text-gray-300 text-center mt-2">Welcome to Matiko!</h2>
+        <h2 className="text-xl font-semibold text-gray-300 text-center mt-2">Welcome to GearPay</h2>
         <h5 className="text-center text-gray-400 text-medium">Create an account</h5>
 
         <form onSubmit={register} method="POST" className="flex flex-col gap-y-2.5 p-4">

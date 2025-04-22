@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+import { Link } from 'react-router'
 
 
 function SignIn() {
@@ -21,7 +22,7 @@ function SignIn() {
     <div className="w-full h-screen flex flex-col gap-4 items-center justify-center">
       <div className="border border-gray-200 w-fit rounded flex flex-col items-center py-2.5">
         <h2 className="text-xl font-semibold text-gray-300 text-center mt-2.5">
-          Welcome to Matiko!
+          Welcome to GearPay
         </h2>
         <h5 className="text-center text-gray-400 text-medium">Log in to your account</h5>
 
@@ -68,7 +69,9 @@ function SignIn() {
           </button>
         </form>
       </div>
-      {/* <Link to="/dashboard">Dashboard</Link> */}
+      <div className="flex flex-row gap-1">
+        <p>Don't have an account? <Link to ="/signup" className="cursor-pointer text-gray-700">Register</Link></p>
+      </div>
     </div>
   );
 }
