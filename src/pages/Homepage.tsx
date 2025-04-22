@@ -230,7 +230,7 @@ function Homepage() {
             <div className="bg-gray-600 w-full text-gray-300  mt-5">
                 <div className="m-5 grid grid-cols-4">
                     <div className="flex flex-col gap-2">
-                        <h1 className="text-2xl font-medium text-gray-300">Ma<span className="text-2xl text-yellow-400">ti</span>ko!</h1>
+                        <h1 className="text-2xl font-medium text-gray-300">Gear<span className="text-2xl text-yellow-400">ti</span>ckets</h1>
                         <div className="flex flex-row gap-2 ">
                             <FaFacebook size={24} className="hover:cursor-pointer hover:text-blue-600"/>
                             <FaInstagram size={24} className="hover:cursor-pointer hover:text-red-800"/>
@@ -250,17 +250,17 @@ function Homepage() {
 
                     <div className="flex flex-col gap-2">
                         <h1 className="text-2xl font-medium text-gray-300">Useful Links</h1>
-                        <a href="#">Events</a>
-                        <a href="#">MyTickets Deals</a>
-                        <a href="#">My Account</a>
-                        <a href="#">Refund Policy</a>
+                        <a href="#" className="hover:underline">Events</a>
+                        <a href="#" className="hover:underline">MyTickets Deals</a>
+                        <a href="#" className="hover:underline">My Account</a>
+                        <a href="#" className="hover:underline">Refund Policy</a>
                     </div>
 
                     <div className="flex flex-col gap-2">
                         <h1 className="text-2xl font-medium text-gray-300">About Us</h1>
-                        <a href="#">Who we are?</a>
-                        <a href="#">FAQ</a>
-                        <a href="#">Contact us</a>
+                        <a href="#" className="hover:underline">Who we are?</a>
+                        <a href="#" className="hover:underline">FAQ</a>
+                        <a href="#" className="hover:underline">Contact us</a>
                         
                     </div>
 
@@ -268,11 +268,11 @@ function Homepage() {
                         <h1 className="text-2xl font-medium text-gray-300">Contact</h1>
                         <div className="flex flex-row gap-2">
                             <FaWhatsapp size={24} color="green"/>
-                            <a href="#">Whatsapp(Text-only-service)</a>
+                            <a href="#" className="hover:underline">Whatsapp(Text-only-service)</a>
                         </div>
                         <div className="flex flex-row gap-2">
                             <FaMailBulk size={24} color="blue"/>
-                            <a href="#">Support</a>
+                            <a href="#" className="hover:underline">Support</a>
                         </div>
                         
                         
@@ -284,9 +284,9 @@ function Homepage() {
                     <div className="flex flex-row justify-between mt-3 text-gray-300">
                         <div className="flex flex-row gap-2">
                             
-                            <h4><Link to="/privacy-policy">Privacy Policy</Link> |</h4>
-                            <h4><Link to="/terms-and-conditions">Terms & Conditions</Link> |</h4>
-                            <h4><Link to="/cookie-policy">Cookie Policy</Link></h4>
+                            <h4><Link to="/privacy-policy" className="hover:underline">Privacy Policy</Link> |</h4>
+                            <h4><Link to="/terms-and-conditions" className="hover:underline">Terms & Conditions</Link> |</h4>
+                            <h4><Link to="/cookie-policy" className="hover:underline">Cookie Policy</Link></h4>
                             
                         </div>
                         <div className="flex flex-row gap-2">
