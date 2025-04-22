@@ -19,7 +19,7 @@ function Homepage() {
             <div className="mx-5">
             <nav className="py-4 flex flex-row items-center justify-between ">
             <div className="flex flex-row items-center gap-2.5">
-                <h2 className="text-4xl font-medium">Ma<span className="text-4xl text-yellow-400">ti</span>ko!</h2>
+                <h2 className="text-4xl font-medium">Gear<span className="text-4xl text-yellow-400">ti</span>ckets</h2>
                     <Link to="" className="py-1 px-3 hover:text-blue-300  cursor-pointer">Sports</Link>
 
                     <Popover className="">
