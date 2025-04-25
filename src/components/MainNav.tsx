@@ -55,14 +55,14 @@ export function MainNav() {
           <div className="flex h-16 items-center justify-between px-4 border-b">
             <Link to="/" className="flex items-center gap-2 font-semibold" onClick={() => setIsMenuOpen(false)}>
               <Ticket className="h-5 w-5" />
-              <span>EventTix</span>
+              <span>GearTickets</span>
             </Link>
             <Button variant="ghost" size="icon" onClick={() => setIsMenuOpen(false)}>
               <X className="h-5 w-5" />
               <span className="sr-only">Close menu</span>
             </Button>
           </div>
-          <nav className="grid gap-2 p-4 text-lg">
+          <nav className="grid gap-2 p-4 text-lg bg-background">
             <Link to="/events" className="flex py-3 border-b border-border" onClick={() => setIsMenuOpen(false)}>
               Events
             </Link>

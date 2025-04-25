@@ -12,21 +12,21 @@ export default function Home() {
       title: "Summer Music Festival",
       date: "June 15-17, 2024",
       location: "Central Park",
-      imageUrl: "/placeholder.svg?height=400&width=600",
+      imageUrl: "/manuel.jpg?height=400&width=600",
     },
     {
       id: "2",
       title: "Tech Conference",
       date: "July 10-12, 2024",
       location: "Convention Center",
-      imageUrl: "/placeholder.svg?height=400&width=600",
+      imageUrl: "/manuel.jpg?height=400&width=600",
     },
     {
       id: "3",
       title: "Art Exhibition",
       date: "August 5-20, 2024",
       location: "City Gallery",
-      imageUrl: "/placeholder.svg?height=400&width=600",
+      imageUrl: "/manuel.jpg?height=400&width=600",
     },
   ]
 
@@ -102,10 +102,10 @@ export default function Home() {
         <div className="container mx-auto flex flex-col md:flex-row justify-between items-center px-4">
           <div className="flex items-center gap-2 mb-4 md:mb-0">
             <Ticket className="h-5 w-5" />
-            <span className="font-semibold">EventTix</span>
+            <span className="font-semibold">GearTickets</span>
           </div>
           <div className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} EventTix. All rights reserved.
+            © {new Date().getFullYear()} GearTickets. All rights reserved.
           </div>
         </div>
       </footer>
