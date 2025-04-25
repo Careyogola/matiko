@@ -14,7 +14,7 @@ export function MainNav() {
       <div className="container flex h-16 items-center px-4">
         <Link to="/" className="flex items-center gap-2 font-semibold">
           <Ticket className="h-5 w-5" />
-          <span>EventTix</span>
+          <span>GearTickets</span>
         </Link>
 
         <nav className="hidden md:flex mx-6 flex-1 items-center gap-6 text-sm">
