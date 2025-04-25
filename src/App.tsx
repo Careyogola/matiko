@@ -1,12 +1,12 @@
 import { Fragment } from "react/jsx-runtime"
-import { MainNav } from "./components/MainNav.tsx"
+import Home from "./pages/home.tsx"
 
 
 function App() {
   
   return (
     <Fragment>
-      <MainNav />
+      <Home />
     </Fragment>
   )
 }
