@@ -106,7 +106,7 @@ function SignUp() {
             className="p-2 border border-gray-300 w-96 rounded"
           />
 
-          <div className="flex flex-row items-center gap-10">
+          <div className="flex flex-row items-center gap-2">
             <input type="checkbox" required />
             <p>
               Accept <span className="text-blue-400">terms and conditions</span>{" "}
